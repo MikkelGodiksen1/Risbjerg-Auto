@@ -85,10 +85,22 @@
 (function initHeroVideo() {
   const video = document.querySelector('.hero__video');
   if (!video) return;
-  // Force play on user interaction if autoplay was blocked
-  document.addEventListener('touchstart', () => {
-    if (video.paused) video.play().catch(() => {});
-  }, { once: true });
+
+  video.muted = true;
+  video.playsInline = true;
+
+  const tryPlay = () => video.play().catch(() => {});
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    tryPlay();
+  } else {
+    document.addEventListener('DOMContentLoaded', tryPlay);
+  }
+
+  // Fallback on first user interaction
+  ['touchstart', 'pointerdown', 'click'].forEach(evt => {
+    document.addEventListener(evt, () => { if (video.paused) video.play().catch(() => {}); }, { once: true });
+  });
 })();
 
 /* ── SERVICE CARDS: Subtle tilt on hover ── */
