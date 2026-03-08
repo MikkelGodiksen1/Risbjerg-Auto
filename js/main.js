@@ -28,8 +28,9 @@
   const links = [
     { href: '#om-os',   label: 'Om os' },
     { href: '#ydelser', label: 'Ydelser' },
-    { href: '#tillid',  label: 'Anmeldelser' },
-    { href: '#kontakt', label: 'Kontakt' },
+    { href: '#tillid',      label: 'Anmeldelser' },
+    { href: '#vaerksteder', label: 'Værksteder' },
+    { href: '#kontakt',     label: 'Kontakt' },
     { href: 'https://booking.servicebogen.dk/onlinebooking?externalid=4282f0bd-1426-4db5-9d66-f11e4b23032c&lan=da', label: 'Book tid →', external: true },
   ];
 

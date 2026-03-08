@@ -11,12 +11,55 @@
   <meta property="og:url" content="https://risbjerg-auto.dk/autovaerksted-broendby/" />
   <meta property="og:image" content="https://risbjerg-auto.dk/wp-content/uploads/2021/12/slise2.jpg" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:site_name" content="Risbjerg Auto" />
+
+  <!-- Geo tags -->
+  <meta name="geo.region" content="DK-84" />
+  <meta name="geo.placename" content="Brøndby" />
+  <meta name="geo.position" content="55.6533;12.4378" />
+  <meta name="ICBM" content="55.6533, 12.4378" />
+
+  <!-- Schema: AutoRepair -->
   <script type="application/ld+json">
   { "@context":"https://schema.org","@type":"AutoRepair","name":"Risbjerg Auto",
     "url":"https://risbjerg-auto.dk","telephone":"+4530222966",
     "address":{"@type":"PostalAddress","streetAddress":"Landlystvej 44","postalCode":"2650","addressLocality":"Hvidovre","addressCountry":"DK"},
+    "geo":{"@type":"GeoCoordinates","latitude":55.6533,"longitude":12.4378},
+    "areaServed":["Brøndby","Hvidovre","Storkøbenhavn"],
     "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"133","bestRating":"5"} }
   </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Forside","item":"https://risbjerg-auto.dk/"},
+      {"@type":"ListItem","position":2,"name":"Autoværksted Brøndby","item":"https://risbjerg-auto.dk/autovaerksted-broendby/"}
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Er Risbjerg Auto tæt på Brøndby?",
+        "acceptedAnswer":{"@type":"Answer","text":"Ja – Hvidovre og Brøndby grænser op til hinanden. Fra Brøndby er der ca. 5-10 minutters kørsel til vores værksted på Landlystvej 44 via Avedøre Havnevej eller Kettegård Allé."}},
+      {"@type":"Question","name":"Tilbyder I gratis hentning fra Brøndby?",
+        "acceptedAnswer":{"@type":"Answer","text":"Dele af Brøndby ligger inden for vores gratis hentningsradius på 5 km. Kontakt os på 30 22 29 66, så aftaler vi det nemt."}},
+      {"@type":"Question","name":"Hvad tilbyder I af bilservice til Brøndby-kunder?",
+        "acceptedAnswer":{"@type":"Answer","text":"Vi tilbyder komplet bilservice: serviceeftersyn, dækskifte, bremser, aircondition, tandrem, kobling, synstjek, undervognsbehandling og anhængertræk – til alle bilmærker."}},
+      {"@type":"Question","name":"Hvornår er der travlt med dækskifte i Brøndby-området?",
+        "acceptedAnswer":{"@type":"Answer","text":"Vi oplever spidsbelastning i oktober-november (vinterdæk) og marts-april (sommerdæk). Book i god tid via vores online booking for at sikre dig en tid."}}
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet" />

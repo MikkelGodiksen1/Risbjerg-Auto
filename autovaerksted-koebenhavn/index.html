@@ -11,12 +11,55 @@
   <meta property="og:url" content="https://risbjerg-auto.dk/autovaerksted-koebenhavn/" />
   <meta property="og:image" content="https://risbjerg-auto.dk/wp-content/uploads/2021/12/slise2.jpg" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:site_name" content="Risbjerg Auto" />
+
+  <!-- Geo tags -->
+  <meta name="geo.region" content="DK-84" />
+  <meta name="geo.placename" content="København" />
+  <meta name="geo.position" content="55.6761;12.5683" />
+  <meta name="ICBM" content="55.6761, 12.5683" />
+
+  <!-- Schema: AutoRepair -->
   <script type="application/ld+json">
   { "@context":"https://schema.org","@type":"AutoRepair","name":"Risbjerg Auto",
     "url":"https://risbjerg-auto.dk","telephone":"+4530222966",
     "address":{"@type":"PostalAddress","streetAddress":"Landlystvej 44","postalCode":"2650","addressLocality":"Hvidovre","addressCountry":"DK"},
+    "geo":{"@type":"GeoCoordinates","latitude":55.6761,"longitude":12.5683},
+    "areaServed":["København","Hvidovre","Storkøbenhavn"],
     "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"133","bestRating":"5"} }
   </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Forside","item":"https://risbjerg-auto.dk/"},
+      {"@type":"ListItem","position":2,"name":"Autoværksted København","item":"https://risbjerg-auto.dk/autovaerksted-koebenhavn/"}
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Betjener I kunder fra hele København?",
+        "acceptedAnswer":{"@type":"Answer","text":"Ja – vi betjener kunder fra hele Storkøbenhavn inkl. Vesterbro, Amager, Sydhavn, Nørrebro og Frederiksberg. Fra det meste af København er der 15-20 minutters kørsel til Landlystvej 44 i Hvidovre."}},
+      {"@type":"Question","name":"Har I gratis parkering ved værkstedet?",
+        "acceptedAnswer":{"@type":"Answer","text":"Ja, der er gratis parkering direkte ved værkstedet på Landlystvej 44 – ingen tidsbegrænsning og rigeligt med plads."}},
+      {"@type":"Question","name":"Kan I hente bilen i København?",
+        "acceptedAnswer":{"@type":"Answer","text":"Vi tilbyder gratis hentning inden for 5 km fra værkstedet. For kunder længere væk kan vi aftale hentning mod et lille gebyr. Kontakt os på 30 22 29 66 for at høre mulighederne."}},
+      {"@type":"Question","name":"Hvad gør Risbjerg Auto anderledes end andre Københavns-værksteder?",
+        "acceptedAnswer":{"@type":"Answer","text":"Vi er et familieejet værksted uden de store overheadomkostninger, hvilket giver sig udtryk i lavere timepriser. 4,8 stjerner på Trustpilot baseret på 133 anmeldelser taler for sig selv."}}
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet" />
